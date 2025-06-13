@@ -113,7 +113,7 @@ neoForge {
             client()
 
             systemProperty("guideme.enderio.guide.sources", file("../enderio-base/src/main/resources/assets/enderio/guides/enderio/guide").absolutePath)
-            systemProperty("guideme.showOnStartup", "enderio:index.md")
+            systemProperty("guideme.showOnStartup", "enderio:guide")
         }
     }
 }
