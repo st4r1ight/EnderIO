@@ -48,10 +48,13 @@ import java.nio.file.Files;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+
+import guideme.Guide;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.EventPriority;
@@ -81,6 +84,8 @@ public class EnderIOBase {
 
     public static IEventBus modEventBus;
     public static ModContainer modContainer;
+
+    private Guide guide;
 
     public EnderIOBase(IEventBus modEventBus, ModContainer modContainer) {
         EnderIOBase.modEventBus = modEventBus;
@@ -124,6 +129,10 @@ public class EnderIOBase {
         modEventBus.addListener(SoulVialItem::onCommonSetup);
         modEventBus.addListener(this::registerRegistries);
         Integrations.register();
+
+        // Register guide
+        guide = Guide.builder(ResourceLocation.fromNamespaceAndPath("enderio", "guide"))
+            .build();
 
         NeoForge.EVENT_BUS.addListener(PlayerMovementHandler::onPlayerTick);
     }
