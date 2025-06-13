@@ -22,6 +22,7 @@ val cctMinecraftVersion: String by project
 val cctVersion: String by project
 val stitchVersion: String by project
 val ae2Version: String by project
+val guideMeVersion: String by project
 val refinedstorageVersion: String by project
 val jadeFileId: String by project
 val mekanismMinecraftVersion: String by project
@@ -55,6 +56,9 @@ dependencies {
 
     // AE2
     runtimeOnly("appeng:appliedenergistics2:${ae2Version}")
+
+    // GuideME
+    runtimeOnly("org.appliedenergistics:guideme:${guideMeVersion}")
 
     // Refined storage
     runtimeOnly("com.refinedmods.refinedstorage:refinedstorage-neoforge:${refinedstorageVersion}")
