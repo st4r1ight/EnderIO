@@ -107,6 +107,14 @@ neoForge {
             server()
             gameDirectory = project.file("runs/server")
         }
+
+
+        create("guidebook") {
+            client()
+
+            systemProperty("guideme.enderio.guide.sources", file("../enderio-base/src/main/resources/assets/enderio/guides/enderio/guide").absolutePath)
+            systemProperty("guideme.showOnStartup", "enderio:index.md")
+        }
     }
 }
 
