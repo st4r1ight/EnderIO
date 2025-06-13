@@ -13,6 +13,7 @@ import com.enderio.base.common.item.capacitors.LootCapacitorItem;
 import com.enderio.base.common.item.misc.BrokenSpawnerItem;
 import com.enderio.base.common.item.misc.CreativeTabIconItem;
 import com.enderio.base.common.item.misc.EnderiosItem;
+import com.enderio.base.common.item.misc.GuideItem;
 import com.enderio.base.common.item.misc.HangGliderItem;
 import com.enderio.base.common.item.misc.LocationPrintoutItem;
 import com.enderio.base.common.item.misc.LoreItem;
@@ -494,6 +495,12 @@ public class EIOItems {
     }
 
     // endregion
+
+    // region Guide
+
+    public static final RegiliteItem<GuideItem> GUIDE = ITEM_REGISTRY
+        .registerItem("guide", GuideItem::new)
+        .setTab(EIOCreativeTabs.MAIN);
 
     // region Creative Tab Icons
 
