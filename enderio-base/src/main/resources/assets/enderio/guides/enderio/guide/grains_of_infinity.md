@@ -2,8 +2,8 @@
 navigation:
     title: Grains of Infinity
     icon: grains_of_infinity
-    item_ids:
-        - enderio:grains_of_infinity
+item_ids:
+    - enderio:grains_of_infinity
 ---
 # Grains of Infinity
 <ItemImage id="grains_of_infinity" scale="6" />
