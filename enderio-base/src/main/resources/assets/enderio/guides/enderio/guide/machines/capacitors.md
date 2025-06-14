@@ -2,7 +2,7 @@
 navigation:
     title: Capacitors
     icon: enderio:basic_capacitor
-    parent: enderio:machine-index.md
+    parent: enderio:machines_index.md
 item_ids:
     - enderio:basic_capacitor
     - enderio:double_layer_capacitor

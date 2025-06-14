@@ -2,7 +2,7 @@
 navigation:
     title: Grains of Infinity
     icon: grains_of_infinity
-    parent: enderio:resources-index.md
+    parent: enderio:resources_index.md
 item_ids:
     - enderio:grains_of_infinity
 categories: 

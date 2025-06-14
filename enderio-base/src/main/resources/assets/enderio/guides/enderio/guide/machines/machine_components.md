@@ -2,7 +2,7 @@
 navigation:
     title: Machine Components
     icon: void_chassis
-    parent: enderio:machine-index.md
+    parent: enderio:machines_index.md
 item_ids:
     - enderio:void_chassis
     - enderio:iron_gear
