@@ -2,13 +2,13 @@
 navigation:
     title: Capacitors
     icon: enderio:basic_capacitor
-    item_ids:
-        - enderio:basic_capacitor
-        - enderio:double_layer_capacitor
-        - enderio:octadic_capacitor 
-    categories:
-        - Machines
-    parent_page: enderio:machine-index.md
+    parent: enderio:machine-index.md
+item_ids:
+    - enderio:basic_capacitor
+    - enderio:double_layer_capacitor
+    - enderio:octadic_capacitor 
+categories:
+    - Machines
 ---
 # Capacitors
 All machines require a capacitor to operate. Capacitors hold energy, in the form of μI, and govern the speed of the machine. Better capacitors will increase the machine's speed and energy capacity.
