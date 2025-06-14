@@ -26,6 +26,7 @@ public class ItemRecipeProvider extends RecipeProvider {
         addTools(recipeOutput);
         addGliders(recipeOutput);
         eraseFilterRecipes(recipeOutput);
+        addGuide(recipeOutput);
     }
 
     private void addGliders(RecipeOutput recipeOutput) {
@@ -145,5 +146,13 @@ public class ItemRecipeProvider extends RecipeProvider {
                 .requires(EIOItems.BASIC_FLUID_FILTER)
                 .unlockedBy("has_ingredient", has(EIOItems.BASIC_FLUID_FILTER))
                 .save(recipeOutput, EnderIO.loc("erase_basic_fluid_filter"));
+    }
+
+    private void addGuide(RecipeOutput recipeOutput) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, EIOItems.GUIDE)
+                .requires(Items.BOOK)
+                .requires(EIOItems.GRAINS_OF_INFINITY)
+                .unlockedBy("has_item", has(Items.PAPER))
+                .save(recipeOutput);
     }
 }
