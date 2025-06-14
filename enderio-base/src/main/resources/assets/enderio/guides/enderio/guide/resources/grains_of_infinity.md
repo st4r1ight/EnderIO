@@ -2,8 +2,11 @@
 navigation:
     title: Grains of Infinity
     icon: grains_of_infinity
+    parent: enderio:resources-index.md
 item_ids:
     - enderio:grains_of_infinity
+categories: 
+    - Resources
 ---
 # Grains of Infinity
 <ItemImage id="grains_of_infinity" scale="6" />
